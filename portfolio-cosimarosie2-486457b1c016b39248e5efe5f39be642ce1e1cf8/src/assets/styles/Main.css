@@ -1,0 +1,108 @@
+.projects img{
+    margin: 0;
+    width: 100vw;
+    height: auto;
+}
+.img{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 75vw;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.webgl{
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.projects{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.projects img{
+    transition: 200ms ease-in-out;
+}
+.projects h2{
+    transition: 200ms ease-in-out;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .title{
+        position: absolute;
+        margin-top: 0;
+        inset: 0;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.205); 
+    }
+    .title h2{
+        margin-left: 1vw;
+        margin-top: 14%;
+        font-size: 3vw;
+    }
+    .title h3{
+        margin-left: 1vw;
+        margin-top: 1vh;
+        font-size: 1.5vw;
+    }
+    .title p{
+        margin-left: 1vw;
+        margin-top: 1vh;
+        width: 20%;
+        font-size: 0.9vw;
+    }
+}
+
+.projects > .title.fade{
+    opacity: 1;
+}
+
+.projects:hover > .title.fade{
+    opacity: 0;
+}
+
+
+/**
+* MOBILE
+*/
+@media screen and (max-width: 800px) {
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .title h2{
+            margin-top: 16%;
+            font-size: 7vw;
+        }
+        .title h3{
+            font-size: 4vw;
+        }
+        .title p{
+            display: none;
+        }
+    }
+
+
+}
+.footer{
+    display: flex;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.footer h2{
+    font-size: 4.1vw;
+    margin-left: 1vw;
+
+}
+.footer a:hover{
+    color: darkgray;
+}

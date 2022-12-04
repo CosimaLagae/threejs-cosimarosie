@@ -1,0 +1,32 @@
+h1{
+    font-size: 4.5vw;
+    margin-left: 1vw;
+}
+.header{
+    display: flex;
+}
+p{
+    margin-top:1.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 0.9vw;
+}
+
+/**
+* MOBILE
+*/
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 13vw;
+        margin-left: 1vw;
+        margin-bottom: 0;
+    }
+    .header{
+        display: block;
+        text-align: justify;
+    }
+    p{
+        margin: 0vw 1.5vw 1vh 1.5vw;
+        font-size: 3vw;
+    }
+}

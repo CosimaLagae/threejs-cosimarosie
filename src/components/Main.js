@@ -99,11 +99,13 @@ function Main() {
 
 
   return (
+    
     <div className="Main">
         <canvas class='webgl'></canvas>
         <div className='img'>
             <img src={img} alt="" />
         </div>
+
         <div class="footer">
             <h2>COSIMALAGAE@GMAIL.COM  |</h2>
             <a href="https://www.instagram.com/cosima.rosie/" target="_blank" rel="noopener noreferrer">       
